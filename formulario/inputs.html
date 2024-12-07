@@ -10,7 +10,7 @@
     <form>
         <!--Campo de Texto-->
         <label for="nome">Nome</label>
-        <input type="nome" id="nome" name="nome" required>
+        <input type="nome" id="nome" name="nome" required placeholder="Exemplo.: André Santos">
     <br><br>
         <!--Campo de Email-->
         <label for="email">E-mail</label>
@@ -45,7 +45,26 @@
 
     <!--Campo de Arquivo (uploads)-->
     <label for="fotodeperfil">Foto de Perfil</label>
-    <input type="file" name="avatar" id="fotodeperfil"><br><br>
+    <input type="file" name="avatar" id="fotodeperfil">
+    <br><br>
+
+    <!--Campo de caixa de seleção-->
+<label for="situacao">Situação Atual</label>
+<select name="situacao" id="situacao">
+    <option value="" selected disabled>Selecione uma das opções</option>
+    <option value="estudante">Estudando para me tornar um programador</option>
+    <option value="estudante">Fazendo apenas por hobby</option>
+    <option value="estudante">Por que quero ficar rico</option>
+    <option value="estudante">Treineer</option>
+    <option value="estudante">Estagiário</option>
+    <option value="estudante">atuando como desenvolvedor</option>
+    <option value="estudante">apenas hobby, já sou rico</option>
+</select>
+<br><br>
+<!--Campo de área de texto de múltiplas linhas-->
+    <label for="sobre">Sobre mim:</label>
+    <textarea name="sobre" id="sobre" cols="40" rows="6" placeholder="Fale um pouco sobre você..."></textarea>
+    <br><br>
     <button type="submit">Enviar</button>
 </form>
 </body>
